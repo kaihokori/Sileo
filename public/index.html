@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kyle Graham - Portfolio</title>
+
+        <script defer src="/__/firebase/10.11.1/firebase-app-compat.js"></script>
+        <script defer src="/__/firebase/10.11.1/firebase-auth-compat.js"></script>
+        <script defer src="/__/firebase/10.11.1/firebase-database-compat.js"></script>
+        <script defer src="/__/firebase/10.11.1/firebase-firestore-compat.js"></script>
+        <script defer src="/__/firebase/10.11.1/firebase-functions-compat.js"></script>
+        <script defer src="/__/firebase/10.11.1/firebase-messaging-compat.js"></script>
+        <script defer src="/__/firebase/10.11.1/firebase-storage-compat.js"></script>
+        <script defer src="/__/firebase/10.11.1/firebase-analytics-compat.js"></script>
+        <script defer src="/__/firebase/10.11.1/firebase-remote-config-compat.js"></script>
+        <script defer src="/__/firebase/10.11.1/firebase-performance-compat.js"></script>
+        <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+        <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    Kyle Graham
+                </a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__itemm">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="ri-home-line"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav__itemm">
+                            <a href="#skills" class="nav__link">
+                                <i class="ri-code-line"></i> Skills
+                            </a>
+                        </li>
+                        <li class="nav__itemm">
+                            <a href="#qualification" class="nav__link">
+                                <i class="ri-book-line"></i> Qualifications
+                            </a>
+                        </li>
+                        <li class="nav__itemm">
+                            <a href="#projects" class="nav__link">
+                                <i class="ri-macbook-line"></i> Projects
+                            </a>
+                        </li>
+                        <li class="nav__itemm">
+                            <a href="#contact" class="nav__link">
+                                <i class="ri-chat-4-line"></i> Contact
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close"> 
+                        <i class="ri-close-line"></i>
+                    </div>
+
+                </div>
+
+                <div class="nav__buttons">
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <section class="home section" id="home">
+                <div class="home__container container grid section__border">
+                    <div class="home__data grid">
+                        <h1 class="home__title">
+                            Hey! I'm Kyle, <br>
+                            a Software Developer <br>
+                            and Data Scientist <br>
+                        </h1>
+                        <div class="home__blob grid">
+                            <div class="home__perfil">
+                                <img src="img/kyle.png" alt="home perfil">
+                            </div>
+                            <img src="img/shape-wawes.svg" alt="" class="home__shape-wawes">
+                            <img src="img/shape-circle.svg" alt="" class="home__shape-circle">
+                        </div>
+                        <ul class="home__social">
+                            <a href="www.linkedin.com/in/kyle-graham-dev" target="_blank" class="home__social-link">
+                                <i class="ri-linkedin-box-line"></i>
+                            </a>
+                            <a href="https://github.com/kaihokori" target="_blank" class="home__social-link">
+                                <i class="ri-github-line"></i>
+                            </a>
+                            <a href="https://www.instagram.com/kaihokori/" target="_blank" class="home__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="home__info">
+                        <div>
+                            <h3 class="home__info-title">
+                                BIOGRAPHY
+                            </h3>
+                            <p class="home__info-description">
+                                I'm Kyle (aka Kai), a Software Developer and Data Scientist that has a passion for iOS, Web Development and UX/UI Designs.
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="home__info-title">
+                                CONTACT
+                            </h3>
+                            <p class="home__info-description">
+                                Sydney, Australia <br>
+                                <a href="mailto:work@kylegraham.dev">work@kylegraham.dev</a><br>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="home__info">
+                        <div>
+                            <h3 class="home__info-title">
+                                GRADUATING IN
+                            </h3>
+                            <p class="home__info-number">
+                                2026
+                            </p>
+                        </div>
+                        <div>
+                            <h3 class="home__info-title">
+                                COMPLETED PROJECTS <br>
+                                (public and private)
+                            </h3>
+                            <p class="home__info-number">
+                                15+
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="skills section" id="skills">
+                <h2 class="section__title">
+                    Skills
+                </h2>
+                <span class="section__subtitle">
+                    My technical and fundamental skills
+                </span>
+                <div class="skills__container container grid section__border">
+                    <div class="skills__content">
+                        <h3 class="skills__title">
+                            <i class="ri-braces-line"></i> Development Scope
+                        </h3>
+                        <div class="skills__info">
+                            <div class="skills__data">
+                                <div class="skills__blob">
+                                    <img src="img/swift.svg" alt="skills image">
+                                </div>
+                                <h3 class="skills__name">
+                                    Swift
+                                </h3>
+                                <span class="skills__subtitle">
+                                    Intermediate
+                                </span>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__blob">
+                                    <img src="img/python.svg" alt="skills image">
+                                </div>
+                                <h3 class="skills__name">
+                                    Python
+                                </h3>
+                                <span class="skills__subtitle">
+                                    Intermediate
+                                </span>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__blob">
+                                    <img src="img/java.svg" alt="skills image">
+                                </div>
+                                <h3 class="skills__name">
+                                    Java
+                                </h3>
+                                <span class="skills__subtitle">
+                                    Intermediate
+                                </span>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__blob">
+                                    <img src="img/r.svg" alt="skills image">
+                                </div>
+                                <h3 class="skills__name">
+                                    R
+                                </h3>
+                                <span class="skills__subtitle">
+                                    Intermediate
+                                </span>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__blob">
+                                    <img src="img/git.svg" alt="skills image">
+                                </div>
+                                <h3 class="skills__name">
+                                    Git (CLI)
+                                </h3>
+                                <span class="skills__subtitle">
+                                    Intermediate
+                                </span>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__blob">
+                                    <img src="img/figma.svg" alt="skills image">
+                                </div>
+                                <h3 class="skills__name">
+                                    Figma
+                                </h3>
+                                <span class="skills__subtitle">
+                                    Advanced
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__content">
+                        <h3 class="skills__title">
+                            <i class="ri-braces-line"></i> Computer Fundamentals
+                        </h3>
+                        <div class="skills__info">
+                            <div class="skills__data">
+                                <div class="skills__blob">
+                                    <img src="img/oop.png" alt="skills image">
+                                </div>
+                                <h3 class="skills__name">
+                                    OOP
+                                </h3>
+                                <span class="skills__subtitle">
+                                    Intermediate
+                                </span>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__blob">
+                                    <img src="img/dbms.png" alt="skills image">
+                                </div>
+                                <h3 class="skills__name">
+                                    DBMS
+                                </h3>
+                                <span class="skills__subtitle">
+                                    Intermediate
+                                </span>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__blob">
+                                    <img src="img/agile.png" alt="skills image">
+                                </div>
+                                <h3 class="skills__name">
+                                    Agile
+                                </h3>
+                                <span class="skills__subtitle">
+                                    Advanced
+                                </span>
+                            </div>
+                            <div class="skills__data">
+                                <div class="skills__blob">
+                                    <img src="img/hci.png" alt="skills image">
+                                </div>
+                                <h3 class="skills__name">
+                                    HCI Design
+                                </h3>
+                                <span class="skills__subtitle">
+                                    Intermediate
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="qualification section" id="qualification">
+                <h2 class="section__title">
+                    Qualifications
+                </h2>
+                <span class="section__subtitle">
+                    Education and Certifications
+                </span>
+                <div class="qualification__container container grid section__border">
+                    <div class="qualification__content">
+                        <h3 class="qualification__title">
+                            <i class="ri-book-line"></i> Education
+                        </h3>
+                        <div class="qualification__info">
+                            <div>
+                                <h3 class="qualification__name">
+                                    B. Advanced Computing <br>
+                                    (Software Development and Data Science)
+                                </h3>
+                                <span class="qualification__country">
+                                    University of Sydney
+                                </span>
+                                <span class="qualification__year">
+                                    2022 - 2026
+                                </span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__name">
+                                    High School (NTCET)
+                                </h3>
+                                <span class="qualification__country">
+                                    St John's College
+                                </span>
+                                <span class="qualification__year">
+                                    2016 - 2021
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="qualification__content">
+                        <h3 class="qualification__title">
+                            <i class="ri-building-line"></i> Certifications
+                        </h3>
+                        <div class="qualification__info">
+                            <div>
+                                <h3 class="qualification__name">
+                                    Technology Job Simulation
+                                </h3>
+                                <span class="qualification__country">
+                                    Deloitte Australia
+                                </span>
+                                <span class="qualification__year">
+                                    Feb 2024
+                                </span>
+                            </div>
+                            <div>
+                                <h3 class="qualification__name">
+                                    Digital Job Simulation
+                                </h3>
+                                <span class="qualification__country">
+                                    NSW Government
+                                </span>
+                                <span class="qualification__year">
+                                    Feb 2024
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <img src="img/shape-circle.svg" alt="qualification image" class="qualification__img">
+            </section>
+
+            <section class="projects section" id="projects">
+                <h2 class="section__title">
+                    Projects
+                </h2>
+                <span class="section__subtitle">
+                    My personal projects
+                </span>
+                <div class="container section__border">
+                    <div class="projects__container swiper">
+                        <div class="swiper-wrapper">
+                            <div class="projects__content swiper-slide">
+                                <img src="img/sous.jpg" alt="projects image" class="projects__img">
+                                <div>
+                                    <span class="projects__subtitle">
+                                        Swift (SwiftUI) - Full Stack
+                                    </span>
+                                    <h1 class="projects__title">
+                                        Sous
+                                    </h1>
+                                    <a href="https://github.com/kaihokori/Sous" class="projects__button">
+                                        Source Code <i class="ri-arrow-right-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="projects__content swiper-slide">
+                                <img src="img/emmet.jpg" alt="projects image" class="projects__img">
+                                <div>
+                                    <span class="projects__subtitle">
+                                        Swift (SwiftUI) - Full Stack
+                                    </span>
+                                    <h1 class="projects__title">
+                                        Emmet
+                                    </h1>
+                                    <a href="https://github.com/kaihokori/Emmet" class="projects__button">
+                                        Source Code <i class="ri-arrow-right-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="projects__content swiper-slide">
+                                <img src="img/crux.png" alt="projects image" class="projects__img">
+                                <div>
+                                    <span class="projects__subtitle">
+                                        Java (Gradle)
+                                    </span>
+                                    <h1 class="projects__title">
+                                        Crux
+                                    </h1>
+                                    <a href="https://github.com/kaihokori/Crux" class="projects__button">
+                                        Source Code <i class="ri-arrow-right-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="projects__content swiper-slide">
+                                <img src="img/sileo.jpg" alt="projects image" class="projects__img">
+                                <div>
+                                    <span class="projects__subtitle">
+                                        HTML, CSS, JavaScript
+                                    </span>
+                                    <h1 class="projects__title">
+                                        Sileo
+                                    </h1>
+                                    <a href="https://github.com/kaihokori/Sileo" class="projects__button">
+                                        Source Code <i class="ri-arrow-right-line"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+                        <div class="swiper-button-prev">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact section" id="contact">
+                <h2 class="section__title">
+                    Contact
+                </h2>
+                <span class="section__subtitle">
+                    Get in touch
+                </span>
+                <div class="contact__container container grid section__border">
+                    <a class="contact__data-email" href="mailto:work@kylegraham.dev">
+                        work@kylegraham.dev
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container container">
+                <ul class="footer__list">
+                    <li>
+                        <a href="#home" class="footer__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="footer__link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#qualification" class="footer__link">Qualifications</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="footer__link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contact</a>
+                    </li>
+                </ul>
+                <ul class="footer__social">
+                    <a href="https://www.linkedin.com/in/kyle-graham-dev" target="_blank" class="footer__social-link">
+                        <i class="ri-linkedin-box-line"></i>
+                    </a>
+                    <a href="https://github.com/kaihokori" target="_blank" class="footer__social-link">
+                        <i class="ri-github-line"></i>
+                    </a>
+                    <a href="https://www.instagram.com/kaihokori/" target="_blank" class="footer__social-link">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                </ul>
+            </div>
+        </footer>
+
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-line"></i>
+        </a>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              const loadEl = document.querySelector('#load');
+      
+              try {
+                let app = firebase.app();
+                let features = [
+                  'auth', 
+                  'database', 
+                  'firestore',
+                  'functions',
+                  'messaging', 
+                  'storage', 
+                  'analytics', 
+                  'remoteConfig',
+                  'performance',
+                ].filter(feature => typeof app[feature] === 'function');
+                loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
+              } catch (e) {
+                console.error(e);
+                loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
+              }
+            });
+        </script>
+
+        <script src="js/scrollreveal.min.js"></script>
+        <script src="js/swiper-bundle.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
