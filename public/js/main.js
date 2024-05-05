@@ -142,4 +142,5 @@ sr.reveal(`.skills__content:nth-child(1), .contact__content:nth-child(1)`, {
 sr.reveal(`.skills__content:nth-child(2), .contact__content:nth-child(2)`, {
     origin: "right",
 });
-sr.reveal(`.qualification__content, .achievements__card`, { interval: 100 });
+sr.reveal(`.qualification__content`, { interval: 100 });
+sr.reveal(`.contact__content`, { interval: 100 });

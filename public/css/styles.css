@@ -598,7 +598,7 @@ a {
     background-color: var(--title-color);
 }
 
-.contact__container {
+.contact__content {
     row-gap: 3.5rem;
 }
 
@@ -851,7 +851,7 @@ a {
         width: 360px;
     }
 
-    .contact__container {
+    .contact__content {
         justify-content: center;
         column-gap: 8rem;
     }
