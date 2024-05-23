@@ -6,11 +6,14 @@
         "**/.*",
         "**/node_modules/**"
       ],
-      "rewrites": [
+      "redirects": [
         {
           "source": "/sitemap.xml",
-          "destination": "/sitemap.xml"
-        },
+          "destination": "/sitemap.xml",
+          "type": 301
+        }
+      ],
+      "rewrites": [
         {
           "source": "**",
           "destination": "/index.html"
@@ -37,6 +40,15 @@
         },
         {
           "source": "/index.html",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "no-cache"
+            }
+          ]
+        },
+        {
+          "source": "/sitemap.xml",
           "headers": [
             {
               "key": "Cache-Control",
