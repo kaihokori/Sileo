@@ -6,14 +6,11 @@
         "**/.*",
         "**/node_modules/**"
       ],
-      "redirects": [
+      "rewrites": [
         {
           "source": "/sitemap.xml",
-          "destination": "/sitemap.xml",
-          "type": 301
-        }
-      ],
-      "rewrites": [
+          "destination": "/sitemap.xml"
+        },
         {
           "source": "**",
           "destination": "/index.html"
