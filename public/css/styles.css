@@ -139,6 +139,10 @@ body.dark-theme {
     background-color: hsl(207, 4%, 35%);
 }
 
+.dark-theme .skills__blob img {
+    filter: invert(1);
+}
+
 .container {
     max-width: 1024px;
     margin-inline: 1.5rem;
